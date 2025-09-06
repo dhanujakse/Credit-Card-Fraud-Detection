@@ -49,6 +49,9 @@ The dataset used for this project is the [Kaggle Credit Card Fraud Detection Dat
 
 ## How to Run
 1. Clone this repository:
-   ```bash
    git clone https://github.com/your-username/credit-card-fraud-detection.git
    cd credit-card-fraud-detection
+2. Install dependencies:
+   pip install -r requirements.txt
+3.Run the notebook:
+   jupyter notebook Fraud_Detection.ipynb
