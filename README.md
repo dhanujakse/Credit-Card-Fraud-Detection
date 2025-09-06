@@ -57,3 +57,6 @@ The dataset used for this project is the [Kaggle Credit Card Fraud Detection Dat
    
 3.Run the notebook:
    jupyter notebook Fraud_Detection.ipynb
+   
+## Contributors
+Dhanuja K S E(Pratinik Infotech - ML Internship Project)
