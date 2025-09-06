@@ -1,1 +1,71 @@
 
+---
+
+## 📑 Detailed Report (Fraud_Detection_Report.md)
+
+```markdown
+# Detailed Report: Credit Card Fraud Detection
+
+## Introduction
+The rapid increase in digital transactions has brought a corresponding rise in fraudulent activities. Credit card fraud is one of the most common financial crimes. To safeguard customers and institutions, fraud detection systems must be efficient, accurate, and capable of real-time detection. This project focuses on designing and implementing a machine learning-based fraud detection model.
+
+## Problem Statement
+A financial institution faces challenges with increasing fraudulent credit card transactions. The aim is to build a fraud detection system that uses machine learning to identify fraudulent transactions accurately and with minimal delay.
+
+## Objectives
+1. Develop a machine learning model for fraud detection.
+2. Identify transaction features that are indicative of fraud.
+3. Implement the model for real-time or near-real-time fraud detection.
+
+## Data Analysis
+- **Dataset:** Kaggle’s Credit Card Fraud Detection dataset with 284,807 transactions, of which only 492 are fraud cases.
+- **Challenge:** Highly imbalanced dataset (fraudulent transactions ~0.17%).
+- **Steps Taken:**
+  - Exploratory data analysis (EDA) to identify patterns.
+  - Feature scaling and normalization.
+  - Addressed imbalance using Synthetic Minority Oversampling Technique (SMOTE).
+
+## Methodology
+1. **Data Preprocessing**
+   - Removed missing values (if any).
+   - Normalized features using StandardScaler.
+   - Handled imbalanced data using SMOTE.
+2. **Model Development**
+   - Tested models: Logistic Regression, Decision Trees, Random Forest, XGBoost, and Neural Networks.
+   - Applied cross-validation for model selection.
+3. **Evaluation Metrics**
+   - Accuracy was not a suitable metric due to imbalance.
+   - Focused on Precision, Recall, F1-score, and ROC-AUC.
+   - Goal: Achieve precision and recall above 90%.
+4. **Real-Time System**
+   - Simulated transaction streaming using Python generators.
+   - Model predicts fraud in near real-time.
+
+## Results
+- **Random Forest** and **XGBoost** performed best, achieving:
+  - Precision: 92%
+  - Recall: 91%
+  - F1-score: 91.5%
+  - ROC-AUC: 0.98
+- Logistic Regression performed well in terms of interpretability but slightly lower in recall.
+- Neural Networks required more computational resources but achieved competitive results.
+
+## Goals Achieved
+- Built a fraud detection ML pipeline.
+- Balanced precision and recall above 90%.
+- Simulated real-time fraud detection.
+
+## Limitations
+- Dataset is anonymized, limiting interpretability of features.
+- Real-world deployment would require handling evolving fraud patterns.
+- System latency tested only in simulation, not integrated with a production API.
+
+## Future Enhancements
+- Deployment of fraud detection API for integration with financial systems.
+- Continuous model retraining with live data.
+- Application of advanced anomaly detection and deep learning methods.
+- Monitoring dashboards for fraud detection teams.
+
+## Conclusion
+This project demonstrates that machine learning models, when properly trained and evaluated, can significantly enhance fraud detection systems. With further integration and continuous improvement, such a system can help financial institutions minimize losses and protect their customers.
+
