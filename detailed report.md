@@ -1,9 +1,5 @@
+## Detailed Report (Fraud_Detection_Report.md)
 
----
-
-## 📑 Detailed Report (Fraud_Detection_Report.md)
-
-```markdown
 # Detailed Report: Credit Card Fraud Detection
 
 ## Introduction
